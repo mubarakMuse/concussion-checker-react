@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Container, FormGroup, Col, ProgressBar} from 'react-bootstrap';
 import Symptoms from "./Symptoms"
 import {RiskButton} from "./RiskButton"
-import axios from 'axios';
 
 class SymptomsBox extends Component {
     constructor(props) {
@@ -64,7 +63,10 @@ class SymptomsBox extends Component {
                     </Col>
                 </div>
                 </FormGroup>
-                <RiskButton coords = {this.state.coords} riskTotal= {this.state.riskTotal}/>
+                <RiskButton 
+                    coords = {this.state.coords} 
+                    riskTotal= {this.state.riskTotal} 
+                    totalPossibleRisk= {this.state.totalPossibleRisk}/>
             </Container>
         )
     }

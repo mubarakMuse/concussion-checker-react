@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import { Button, Modal, Spinner} from 'react-bootstrap';
 import axios from 'axios';
-import {nearByHospitalUrl} from "/Users/mubarakmuse/Desktop/personal_project/my-app/src/data/ApiUrl.js"
+import {nearByHospitalUrl} from "/Users/mubarakmuse/Desktop/personal_project/concussion-checker-react/src/data/dataApi.js"
 
 export function RiskButton(props) {
 
@@ -13,7 +13,6 @@ export function RiskButton(props) {
         if (nearByhospitals.results) {
             let hospitals  = nearByhospitals.results.slice(0,3).map((hospital) => (
             <div>
-                {/* <Image src={hospital.icon}/> */}
                 <a href ={'https://www.google.com/maps/place/' + hospital.vicinity.split(' ').join('+')}> {hospital.name}</a>
             </div>
             ))
@@ -27,10 +26,10 @@ export function RiskButton(props) {
 
     function calculateRisk() {
         let risk = ""
-        if (props.riskTotal > 750 ) {
+        if (props.riskTotal/props.totalPossibleRisk > .75 ) {
             risk = "High Risk"
         }
-        else if (props.riskTotal > 150) {
+        else if (props.riskTotal/props.totalPossibleRisk> .25) {
             risk = "Meduim Risk"
         } 
         else {
@@ -45,17 +44,16 @@ export function RiskButton(props) {
         setOpenModal(false)
     }
 
-    function getNearByHospitals() {
-        if (props.coords.latitude && props.coords.longitude) {
-            axios.get(nearByHospitalUrl(props.coords))
-            .then(res => {
-                const data = res.data;
-                setNearByHospitals(data)
-            })
-        }
-   
-    }
     useEffect(() => {
+        function getNearByHospitals() {
+            if (props.coords.latitude && props.coords.longitude) {
+                axios.get(nearByHospitalUrl(props.coords))
+                .then(res => {
+                    const data = res.data;
+                    setNearByHospitals(data)
+                })
+            }
+        }
         getNearByHospitals();
       }, [props.coords]);
 

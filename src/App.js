@@ -4,29 +4,21 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import './App.css';
 import ConcussionChecker from "./views/ConcussionChecker/ConcussionChecker"
-import Questionnaire from "./views/Questionnaire"
 import Home from './views/Home'
 
 
 
 class App extends Component {
   render() {
-
-  
-  return (
-    // <div style ={{padding:"30px",  alignItems: "center", backgroundColor:"red"}}>
-
-    
-    <React.Fragment style ={{padding:"30px",  alignItems: "center", backgroundColor:"red"}}>
+  return ( 
+    <React.Fragment>
            <Router>
             <Switch>
-              <Route exact path= "/cc" component={ConcussionChecker} />
-              <Route exact path= "/q" component={Questionnaire} />
               <Route exact default path= "/" component={Home} />
+              <Route exact path= "/concussion-checker" component={ConcussionChecker} />
             </Switch>
           </Router>
     </React.Fragment>
-    // </div>
   );
 };
 }
