@@ -1,0 +1,238 @@
+body {
+    background-color:#FFFFFF;
+}
+
+.theme-orange {
+    background-color:#ff8f0f;
+    border-color:#ff8f0f;
+}
+
+.theme-orange-nohover {
+    background-color:#ff8f0f;
+    border-color:#ff8f0f;
+    text-align: center;
+}
+
+.theme-orange:hover {
+    background-color:#c6730d;
+    border-color:#c6730d;
+}
+
+.theme-white {
+    background-color:#FFFFFF;
+}
+
+.orange-outline {
+    border: 1px solid #db8215;
+}
+
+.max-width {
+    width:100%;
+}
+
+.text-orange {
+    color:#ff8f0f;
+}
+
+.text-white {
+    color:#FFFFFF;
+}
+
+.badge-checkboxes .checkbox input[type="checkbox"],
+.badge-checkboxes label.checkbox-inline input[type="checkbox"] {
+    /*  Hide the checkbox, but keeps tabbing to it possible. */
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+
+.badge-checkboxes .checkbox label,
+.badge-checkboxes label.checkbox-inline {
+    padding-left:0; /* Remove space normally used for the checkbox */
+}
+
+.badge-checkboxes .checkbox input[type="checkbox"]:checked:focus + .badge,
+.badge-checkboxes label.checkbox-inline input[type="checkbox"]:checked:focus + .badge {
+    color:#ffffff;
+
+    box-shadow:0 0 2pt 1pt #333;  /* Outline when checkbox is focused/tabbed to */
+}
+
+.badge-checkboxes .checkbox input[type="checkbox"]:focus + .badge,
+.badge-checkboxes label.checkbox-inline input[type="checkbox"]:focus + .badge {
+    color:#db8215;
+
+    box-shadow:0 0 2pt 1pt #999;  /* Outline when checkbox is focused/tabbed to */
+}
+
+.badge-checkboxes .checkbox input[type="checkbox"] + .badge,
+.badge-checkboxes label.checkbox-inline input[type="checkbox"] + .badge {
+    border:1px solid #999; /* Add outline to badge */
+    color:#ffffff;
+
+    /* Make text in badge not selectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Give badges for disabled checkboxes an opacity of 50% */
+.badge-checkboxes .checkbox input[type="checkbox"]:disabled + .badge,
+.badge-checkboxes label.checkbox-inline input[type="checkbox"]:disabled + .badge
+{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+
+/* Remove badge background-color and set text color for not checked options */
+.badge-checkboxes .checkbox input[type="checkbox"]:not(:checked) + .badge,
+.badge-checkboxes label.checkbox-inline input[type="checkbox"]:not(:checked) + .badge{
+    background-color:#ffffff;
+    color:#000000;
+}
+
+/*The following css only required for Bootstrap <= 3.1.0 */
+.badge-checkboxes .checkbox {
+    padding-left:0; /* Remove space normally used for the checkbox */
+}
+
+.badge-checkboxes .disabled label,
+.badge-checkboxes label.checkbox-inline.disabled {
+    cursor:not-allowed
+}
+
+/* The following CSS not required for the badge styled checkboxes: */
+section + section  {
+    margin-top:20px;
+}
+
+label + .checkbox  {
+    margin-top:0;
+}
+
+h2 {
+    font-size:18px;
+    font-weight:bold;
+}
+
+.jumbotron {
+    border-bottom:1px solid black;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    margin: auto;
+}
+
+.badge {
+    border: 1px solid #db8215 !important;
+}
+
+.test {
+    background-color: #1c7430 !important;
+    color: red;
+}
+
+.checked {
+    background-color: #db8215;
+    color:white;
+}
+
+.researchLogo {
+    height:60px;
+    width:100px;
+}
+
+.mayoLogo {
+    height:80px;
+    width:100px;
+}
+
+.clevelandLogo {
+    height:40px;
+    width:120px;
+}
+
+footer {
+    height: 100px;
+    bottom: 0;
+    margin-top:25px;
+    width: 100%;
+}
+
+label.radio-inline, label.checkbox-inline {
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 400;
+    margin-bottom: 10px !important;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 10px 10px 10px 30px;
+}
+
+label.radio-inline.checked, label.checkbox-inline.checked {
+    background-color: #ffffff;
+    color: #fff !important;
+    text-shadow: 1px 1px 2px #000 !important;
+}
+
+.checkbox-inline + .checkbox-inline, .radio-inline + .radio-inline {
+    margin-left: 0;
+}
+
+.columns label.radio-inline, .columns label.checkbox-inline {
+    min-width: 215px;
+    vertical-align: top;
+    width: 30%;
+}
+
+.additional-info-wrap {
+    display: inline-block;
+    margin: 0 2% 0 0;
+    min-width: 190px;
+    position: relative;
+    vertical-align: top;
+    width: 30%;
+}
+
+.additional-info-wrap label.checkbox-inline, .additional-info-wrap label.radio-inline {
+    width: 100% !important;
+}
+
+.additional-info-wrap .additional-info {
+    background-color: #266c8e;
+    clear: both;
+    color: #fff !important;
+    margin-top: -10px;
+    padding: 0 10px 10px;
+    text-shadow: 1px 1px 2px #000 !important;
+    width: 100%;
+}
+
+.checkbox-inline {
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+.highRisk {
+    color: red;
+}
+
+.mediumRisk {
+    color: orange;
+}
+
+.lowRisk {
+    color: yellow;
+}
