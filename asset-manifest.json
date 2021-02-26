@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/concussion-checker-react/static/css/main.349edf32.chunk.css",
+    "main.js": "/concussion-checker-react/static/js/main.cdf5cb14.chunk.js",
+    "main.js.map": "/concussion-checker-react/static/js/main.cdf5cb14.chunk.js.map",
+    "runtime-main.js": "/concussion-checker-react/static/js/runtime-main.c272fa6e.js",
+    "runtime-main.js.map": "/concussion-checker-react/static/js/runtime-main.c272fa6e.js.map",
+    "static/css/2.64a99b10.chunk.css": "/concussion-checker-react/static/css/2.64a99b10.chunk.css",
+    "static/js/2.b484211b.chunk.js": "/concussion-checker-react/static/js/2.b484211b.chunk.js",
+    "static/js/2.b484211b.chunk.js.map": "/concussion-checker-react/static/js/2.b484211b.chunk.js.map",
+    "index.html": "/concussion-checker-react/index.html",
+    "precache-manifest.7f0a93ab5f6c480fa84893f9e4bb4181.js": "/concussion-checker-react/precache-manifest.7f0a93ab5f6c480fa84893f9e4bb4181.js",
+    "service-worker.js": "/concussion-checker-react/service-worker.js",
+    "static/css/2.64a99b10.chunk.css.map": "/concussion-checker-react/static/css/2.64a99b10.chunk.css.map",
+    "static/css/main.349edf32.chunk.css.map": "/concussion-checker-react/static/css/main.349edf32.chunk.css.map",
+    "static/js/2.b484211b.chunk.js.LICENSE": "/concussion-checker-react/static/js/2.b484211b.chunk.js.LICENSE",
+    "static/media/CDC.jpg": "/concussion-checker-react/static/media/CDC.33dbb03a.jpg",
+    "static/media/ClevelandClinic.jpeg": "/concussion-checker-react/static/media/ClevelandClinic.1b683b4a.jpeg",
+    "static/media/ResearchGate.png": "/concussion-checker-react/static/media/ResearchGate.cd457940.png",
+    "static/media/WebMD_logo.png": "/concussion-checker-react/static/media/WebMD_logo.f945d994.png",
+    "static/media/logo.png": "/concussion-checker-react/static/media/logo.c7f30d24.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c272fa6e.js",
+    "static/css/2.64a99b10.chunk.css",
+    "static/js/2.b484211b.chunk.js",
+    "static/css/main.349edf32.chunk.css",
+    "static/js/main.cdf5cb14.chunk.js"
+  ]
+}
