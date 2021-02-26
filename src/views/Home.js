@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import logo from '/Users/mubarakmuse/Desktop/personal_project/concussion-checker-react/src/views/ConcussionChecker/images/logo.png'
+import logo from '/Users/mubarakmuse/Desktop/personal_projects/concussion-checker-react/src/views/ConcussionChecker/images/logo.png'
 
 function Home(props) {
   return (

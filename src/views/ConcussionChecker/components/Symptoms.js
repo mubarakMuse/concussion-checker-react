@@ -1,5 +1,5 @@
 import React from 'react';
-import {symptomsData} from '/Users/mubarakmuse/Desktop/personal_project/concussion-checker-react/src/data/symptomsData.js'
+import {symptomsData} from '/Users/mubarakmuse/Desktop/personal_projects/concussion-checker-react/src/data/symptomsData.js'
 
 export function Symptoms(props) {
     const checked = event => {

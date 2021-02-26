@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import { Button, Modal, Spinner} from 'react-bootstrap';
 import axios from 'axios';
-import {nearByHospitalUrl} from "/Users/mubarakmuse/Desktop/personal_project/concussion-checker-react/src/data/dataApi.js"
+import {nearByHospitalUrl} from "/Users/mubarakmuse/Desktop/personal_projects/concussion-checker-react/src/data/dataApi.js"
 
 export function RiskButton(props) {
 
