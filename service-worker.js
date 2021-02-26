@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/concussion-checker-react/precache-manifest.7f0a93ab5f6c480fa84893f9e4bb4181.js"
+  "/concussion-checker-react/precache-manifest.1b9258d33870f9cbea0709b078920e2b.js"
 );
 
 self.addEventListener('message', (event) => {
